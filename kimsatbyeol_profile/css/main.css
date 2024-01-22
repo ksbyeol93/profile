@@ -1,0 +1,1016 @@
+div#header_wrap{
+ width: 100%;
+ height: 80px;
+ position: fixed;
+ left:0px;
+ top:0px;
+ z-index: 999;
+}
+div#mainmenu_bg{
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  position: absolute;
+  left:0px;
+  top:0px;
+}
+
+p#mainmenu{
+  width: 78px;
+  height: 36px;
+  background: url('/kimsatbyeol_profile/images/menu_icon.png') right center no-repeat;
+  cursor: pointer;
+  position: absolute;
+  right: 160px;
+  top:22px;
+  z-index: 9999;
+}
+p#mainmenu img{
+  width: 100%;
+}
+nav#mainmenu_wrap{
+  width:500px;
+  height: 100%;
+  position:absolute;
+  right:300px;
+  top:25px;
+  overflow: hidden;
+  z-index: 9990;
+}
+ul#mainmenu_list{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  right:-500px;
+  top:0px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  opacity: 0;
+  
+}
+ul#mainmenu_list li a{
+ font: normal 20px "Lato";
+ color: white;
+ position: relative;
+ left:0px;
+ top:0px;
+}
+
+ul#mainmenu_list li a::after{
+  content: '';
+  width:100%;
+  height: 3px;
+  position: absolute;
+  background: white;
+  left:0px;
+  bottom: -10px;
+  transform: scale(0.0);
+  transition: 2s;
+}
+ul#mainmenu_list li.selected a::after{
+  transform: scale(1.1);
+}
+
+header{
+  width: 1600px;
+  height: 100%;
+  margin: 0px auto;
+}
+div#visual_wrap{
+  width:100%;
+  height: 980px;
+  position:relative;
+  left:0px;
+  top:0px;
+  overflow: hidden;
+}
+
+div#main_visual_img_color{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  left:0px;
+  top:0px;
+  background: url('/kimsatbyeol_profile/images/mainVisual.jpg') no-repeat;
+  background-size: cover;
+  z-index: -10;
+}
+div#main_visual_img_gray{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  left:0px;
+  top:0px;
+  background: url('/kimsatbyeol_profile/images/mainVisual_gray.jpg') no-repeat;
+  background-size: cover;
+  z-index: -0;
+}
+
+section#visual{
+  width: 1600px;
+  height: 100%;
+  margin: 0px auto;
+  position: relative;
+  left: 0px;
+  top:0px;
+}
+div#profile_title_wrap{
+  width: 600px;
+  height: 244px;
+  position: absolute;
+  left:0px;
+  top:360px;/*360 제위치*/
+}
+p#twinkle_text{
+  font: normal 100px "Oooh Baby";
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  position: absolute;
+  left:0px;
+  top:200px;
+}
+span.title_purple{
+  color: #7900FF;
+}
+
+span.title_yellow{
+  color: #FFE500;
+}
+p#profile_title{
+  font: normal 100px "Lato";
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left:0px;
+  top:120px;
+  opacity: 0;
+}
+div#subtract_wrap{
+  width:1035px;
+  height: 660px;
+  background: url('/kimsatbyeol_profile/images/subtract.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  right:-1200px;/*-90px -125px 시안 -160px 완전 벽에 붙임*/
+  top:15%;
+
+}
+div#subtract_text_wrap{
+  width:400px;
+  height: 180px;
+  position: absolute;
+  right:90px;
+  top:70px;
+  overflow: hidden;/**/
+}
+p#copy_title{
+  font: normal 55px "Lora";
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  opacity: 0;
+  left:-310px;
+  top:0px;
+}
+p.copy_text1{
+  font: normal 38px "Lora";
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  opacity: 0;
+  left:-400px;
+  top:80px;
+}
+p.copy_text2{
+  font: normal 38px "Lora";
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  opacity: 0;
+  left:-400px;
+  top:130px;
+}
+
+
+/* identity_section시작 */
+
+div#identity_section_wrap{
+  width: 100%;
+  height: 1000px;
+  background: #D4F505;
+  overflow: hidden;
+}
+section#identitySection{
+  width:1600px;
+  height: 100%;
+  margin:0px auto;
+  position: relative;
+  left:0px;
+  top:0px;
+}
+div#identity_img{
+  width: 978px;
+  height: 832px;
+  background: url('/kimsatbyeol_profile/images/identity_visual.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  left:50%;
+  margin-left:-489px;
+  top:50%;
+  margin-top: -400px;
+  transform:scale(0.5)
+}
+
+div#identity_title_wrap{
+  width:100px;
+  height: 78px;
+  position: absolute;
+  left:-100px;
+  top:115px;
+  opacity: 0;
+}
+
+p#identity_title_first{
+  font: normal 65px "Lato";
+  font-weight: 700;
+  color:white;
+  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  
+}
+
+div#indentity_section_wrap2{
+  width:100%;
+  height: 1000px;
+  background: #D4F505;
+}
+section#identitySection2{
+  width:1600px;
+  height: 100%;
+  margin:0px auto;
+}
+div#identity_title_second{
+  width:700px;
+  height: 210px;
+  position: absolute;
+  left:0px;
+  top:115px;
+  opacity: 0;
+  /*들어올 텍스트*/
+}
+p.identity_title_second{
+  font: normal 50px "Lato";
+  font-weight: 900;
+  color:white;
+  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+span.identity_pink{
+  font: normal 65px "Lato";
+  font-weight: 900;
+  color:#FF2F7A;
+}
+span.identity_purple{
+  font: normal 65px "Lato";
+  font-weight: 900;
+  color:#7900FF;
+}
+div#identity_text_second{
+  width:620px;
+  height: 150px;
+  position: absolute;
+  left:0px;
+  bottom: 115px;
+  opacity: 0;
+  /*들어올 텍스트*/
+}
+
+div#identity_text_second p{
+  font: normal 20px "Noto Sans KR";
+  color: #555;
+}
+div#identity_img_main{
+  width: 977px;
+  height: 786px;
+  background: url('/kimsatbyeol_profile/images/mobiuseGroup.png');
+  position: absolute;
+  left:40%;
+  top:50%;
+  margin-top: -400px;
+  transform: scale(5,5);
+  opacity:0;
+}
+
+/* introduce시작 */
+div#introduce_section_wrap{
+  width:100%;
+  height: 980px;
+  background: url('/kimsatbyeol_profile/images/introduce_bg.jpg');
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+section#introduceSection{
+  width:1600px;
+  height: 100%;
+  margin:0px auto;
+}
+
+p#introduce_title{
+  font: normal 100px "Outfit";
+  letter-spacing: 4px;
+  font-weight: 900;
+  text-transform:capitalize ;
+  text-align: center;
+  color: #D4F505;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+p#introduce_text_mind{
+  font: normal 40px "Oooh Baby";
+  text-align: center;
+  color: #D4F505;
+  margin-bottom: 40px;
+}
+div#introduce_img_text_wrap{
+  width:1200px;
+  height: 620px;
+  margin: 0px auto;
+}
+div#profile_picture_wrap{
+  width:470px;
+  height: 620px;
+  float: left;
+  position: relative;
+  left:0px;
+  top:0px;
+  background: linear-gradient(180deg, #C3DAE8 0%, #A8C5DA 100%);
+}
+
+p#profile_picture{
+  width:100%;
+  height: 100%;
+  background: url('/kimsatbyeol_profile/images/profile_picture.jpg') no-repeat;
+  position: absolute;
+  left:0px;
+  top:0px;
+  transform: scale(0.8,0.8);
+}
+
+
+div#intorudece_info_wrap{
+  width:700px;
+  height: 100%;
+  margin-left: 30px;
+  float: left;
+  position: relative;
+  left: 0px;
+  top:0px;
+  overflow: hidden;
+}
+
+ul#profile_text_list{
+  width:100%;
+  height: 300px;
+  position: absolute;
+  left:-720px;
+  top:50%;
+  margin-top: -150px;
+}
+
+div#profile_picture_bg{
+  width:100%;
+  height: 200px;
+  background: rgba(121, 0, 255, 0.6);
+  padding: 20px 0px;
+  box-sizing: border-box;
+  position: absolute;
+  left:0px;
+  bottom:-200px;
+  opacity: 0;
+}
+div#tag_wrap{
+  width:100%;
+  height: 160px;
+  position: relative;
+  bottom:-20px;
+  left:0px;
+  opacity: 0;
+}
+ul#tag_list{
+  width: auto;
+  height: 160px;
+  margin: 0px auto;
+  /* opacity: 0; */
+}
+li.tag_keyword{
+  width:300px;
+  font: normal 20px/32px "Noto Sans KR";
+  font-weight: 400;
+  color: white;
+  margin:0px auto;
+}
+ul#profile_text_list li{
+  width:100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+ul#profile_text_list li:last-child{
+  margin-bottom: 0px;
+}
+
+p.introduce_text_style{
+  font: normal 16px/25px "Noto Sans KR";
+  color: white;
+}
+p#introduce_icon01{
+  width: 35px;
+  height: 25px;
+  background: url('/kimsatbyeol_profile/images/intro_icon01.png') center center no-repeat;
+  float: left;
+  margin-right: 25px;
+}
+p#introduce_icon02{
+  width: 35px;
+  height: 25px;
+  background: url('/kimsatbyeol_profile/images/intro_icon02.png') center center no-repeat;
+  float: left;
+  margin-right: 25px;
+}
+p#introduce_icon03{
+  width: 35px;
+  height: 25px;
+  background: url('/kimsatbyeol_profile/images/intro_icon03.png') center center no-repeat;
+  float: left;
+  margin-right: 25px;
+}
+p#introduce_icon04{
+  width: 35px;
+  height: 72px;
+  background: url('/kimsatbyeol_profile/images/intro_icon04.png') top center no-repeat;
+  float: left;
+  margin-right: 25px;
+}
+p#introduce_icon05{
+  width: 35px;
+  height: 25px;
+  background: url('/kimsatbyeol_profile/images/intro_icon05.png') center center no-repeat;
+  float: left;
+  margin-right: 25px;
+}
+p#introduce_icon06{
+  width: 35px;
+  height: 25px;
+  background: url('/kimsatbyeol_profile/images/intro_icon06.png') center center no-repeat;
+  float: left;
+  margin-right: 25px;
+}
+
+
+/* Skill영역 시작 */
+div#skillsAll_section{
+  width:100%;
+  height: 980px;
+}
+div#skill_section_wrap{
+  width:500%;
+  height: 100%;
+}
+section.skillsSection{
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+div.skill_title_opacity{
+  font: normal 80px "Noto Sans KR";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 0px;
+  top:400px;
+  transform: rotate( 90deg );
+}
+section#skillsSection_bg1{
+  /*html color*/
+  background: #F16529;
+}
+section#skillsSection_bg2{
+  /*reponsive color*/
+  background: #379AD6;
+}
+section#skillsSection_bg3{
+  background: #7900FF;
+}
+section#skillsSection_bg4{
+  /*javascript color*/
+  background: #eec328;
+}
+section#skillsSection_bg5{
+  /*javascript color*/
+  background: #38baba;
+}
+
+
+
+div.skillsSection_float_wrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left:0px;
+  top:0px;
+  box-shadow: 10px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+h2.skill_title{
+  width:280px;
+  height: 85px;
+  float: left;
+  font: normal 55px/85px "Noto Sans KR";
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  left:160px;
+  top:150px;
+  z-index:10;/*i can do*/
+}
+h2.skill_title::before{
+  content: '';
+  width:329px;
+  height: 195px;
+  background: url('/kimsatbyeol_profile/images/skill_identity.png') no-repeat;
+  opacity: 0.6;
+  position: absolute;
+  left:-50px;
+  top:-50px;
+}
+
+div.skill_name_position{
+  width:900px;
+  height: 85px;/*li 하나의 높이값*/
+  position: absolute;
+  left:400px;/*icando width*/
+  top:145px;
+  overflow: hidden;
+}
+
+p.skillName_style{
+  width:auto;
+  font: normal 45px/85px "Noto Sans KR";
+  font-weight: 700;
+  color: white;
+  position: relative;
+  left:-900px;/*원래위치 30px -900*/
+  top:10px; /*원래위치 10px*/
+  display: inline-block;
+  opacity: 0;
+}
+
+div.skill_Info_Section{
+  width:1000px;
+  height: 100%;
+  position:absolute;
+  left:440px;/*i can do 끝나는 위치 280*/
+  top:40%;
+  overflow: hidden;
+}
+div#react_skill_info_text_wrap{
+  width: 700px;
+  height: 600px;
+  position: relative;
+  left:440px;
+  top:26%;
+  overflow: hidden;
+}
+ul.skill_Info_text_list{
+  width:100%;
+  height: auto;
+  position: absolute;
+  left:100px;/*오른쪽 1000*/
+  top:0px;
+  opacity: 0;
+}
+ul#skillText_list5{
+  width:100%;
+  height: auto;
+  position: absolute;
+  left:200px;/*오른쪽 1000*/
+  top:0px;
+  opacity: 0;
+}
+li.skill_info_text{
+  font: normal 26px/50px "Noto Sans KR";
+  font-weight: 700;
+  color: white;
+}
+li.react_skill_info_text{
+  font: normal 18px/45px "Noto Sans KR";
+  font-weight: 700;
+  color: white;
+}
+
+/* project_시작 */
+/* project1 */
+div.project_wrap{
+  width:100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+div#project1_visual_wrap{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #00618f 0%,#00618f 880px,#cbcbcb 880px,#cbcbcb 980px);
+  padding: 160px 160px;
+  box-sizing: border-box;
+  position: relative;
+  left:0px;
+  top:0px;
+}
+p#mockup1_wrap{
+  width: 950px;
+  height: 550px;
+  position: absolute;
+  right: 160px;
+  top:650px;/*위치 550*/
+  opacity: 0;
+}
+p#mockup1_wrap>img{
+  width: 100%;
+}
+p.project_num{
+  font:normal 40px "Lora";
+  color: #fff;
+}
+span#project_logo1{
+  width: 50px;
+  height: 50px;
+  background: url('/kimsatbyeol_profile/images/project_logo1.png') no-repeat;
+  display: inline-block;
+  margin-right: 20px;
+}
+p.project_name{
+  font:normal 80px "Noto Sans KR";
+  font-weight: 700;
+  color: #fff;
+}
+p.project_text{
+  font:normal 40px "Lora";
+  color: rgba(255, 255, 255, 0.5);
+}
+ul.project_function_list{
+  width:auto;
+  height: auto;
+  margin-bottom: 80px;
+}
+ul.project_function_list>li{
+  width:100%;
+  height: 30px;
+  font:normal 20px "Noto Sans KR";
+  color: #fff;
+}
+
+div#project1_skills_wrap{
+  width:800px;
+  height: auto;
+}
+div.project_icon_wrap{
+  margin-bottom: 20px;
+}
+p.skill_title{
+  font:normal 27px "Noto Sans KR";
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+p.skills_name{
+  font:normal 27px "Noto Sans KR";
+  margin-right: 20px;
+  color: #fff;
+  float: left;
+}
+img.skill_icon_margin_right{
+  margin-right: 10px;
+}
+
+div.project_color_font_wrap{
+  width:1600px;
+  height: 400px;
+  padding-top: 45px;
+  margin: 0px auto;
+  position: relative;
+  left:0px;
+  top:0px;
+}
+div.project_color_wrap{
+  width:50%;
+  height: 100%;
+  float: left;
+
+}
+div.project_font_wrap{
+  width:50%;
+  height: 100%;
+  float: left;
+}
+p.project_info_title_style{
+  font:normal 28px "Noto Sans KR";
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+img.font_float{
+  float: left;
+  margin-right: 30px;
+}
+p.font_info{
+  font:normal 20px "Noto Sans KR";
+  color: #555;
+}
+div.button_wrap{
+  width:630px;
+  height: 80px;
+  position: absolute;
+  left:50%;
+  margin-left: -315px;
+  bottom:0px;
+}
+button.more_code_view{
+  width: 300px;
+  height: 80px;
+  background: #D9D9D9;
+  border: none;
+  font:normal 30px "Noto Sans KR";
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+}
+button#project_btn1{
+  background: #00618F;
+  margin-right: 30px;
+}
+button#project_btn1_1{
+  border: solid 2px #00618F;
+  color: #00618F;
+  box-sizing: border-box;
+  background: #fff;
+}
+button#project_btn2{
+  background: #4A0505;
+  margin-right: 30px;
+}
+button#project_btn2_1{
+  border: solid 2px #4A0505;
+  color: #4A0505;
+  box-sizing: border-box;
+  background: #fff;
+}
+div#project_btn3_wrap{
+  width:300px;
+  height: 80px;
+  position: absolute;
+  left:50%;
+  margin-left: -150px;
+  bottom:0px;
+}
+button#project_btn3{
+  background: #0A013D;
+}
+button#project_btn3_1{
+  border: solid 2px #0A013D;
+  color: #0A013D;
+  box-sizing: border-box;
+  background: #fff;
+}
+button#project_btn4{
+  background: #7900FF;
+  margin-right: 30px;
+}
+button#project_btn4_1{
+  border: solid 2px #7900FF;
+  color: #7900FF;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* project2 */
+div#project2_visual_wrap{
+  width: 100%;
+  height: 980px;
+  background: linear-gradient(to bottom, #FDCFB8 0%,#FDCFB8 880px,#cbcbcb 880px,#cbcbcb 980px);
+  padding: 160px 160px;
+  box-sizing: border-box;
+  position: relative;
+  left:0px;
+  top:0px;
+}
+p#mockup2_wrap{
+  width: 950px;
+  height: 550px;
+  position: absolute;
+  right: 160px;
+  top:650px;/*위치 550*/
+  opacity: 0;
+}
+p#mockup2_wrap>img{
+  width: 100%;
+}
+span#project_logo2{
+  width: 50px;
+  height: 50px;
+  background: url('/kimsatbyeol_profile/images/project_logo2.png') no-repeat;
+  display: inline-block;
+  margin-right: 20px;
+}
+p.project_name2{
+  font:normal 80px "Lora";
+  font-weight: 700;
+  color: #fff;
+}
+ul.project_function_list2{
+  width:auto;
+  height: auto;
+  margin-bottom: 80px;
+}
+ul.project_function_list2>li{
+  width:100%;
+  height: 30px;
+  font:normal 20px "Noto Sans KR";
+  font-weight: 400;
+  color: #B25959;
+}
+div#lora_wrap{
+  width:100%;
+  height: 95px;
+  margin-bottom: 20px;
+}
+
+/* project3 */
+div#project3_visual_wrap{
+  width: 100%;
+  height: 980px;
+  background: linear-gradient(to bottom, #C6EBE2 0%,#C6EBE2 880px,#cbcbcb 880px,#cbcbcb 980px);
+  background-size: cover;
+  padding: 160px 160px;
+  box-sizing: border-box;
+  position: relative;
+  left:0px;
+  top:0px;
+}
+p#mockup3_wrap{
+  width: 950px;
+  height: 550px;
+  position: absolute;
+  right: 160px;
+  top:350px;/*250 원래위치*/
+  opacity: 0;
+}
+p#mockup3_wrap>img{
+  width: 100%;
+}
+span#project_logo3{
+  width: 50px;
+  height: 50px;
+  background: url('/kimsatbyeol_profile/images/project_logo3.png') no-repeat;
+  display: inline-block;
+  margin-right: 20px;
+}
+p.project_name3{
+  width: 401px;
+  height: 72px;
+  background: url('/kimsatbyeol_profile/images/naming_text.png')no-repeat;
+}
+
+/* project4 */
+div#project4_visual_wrap{
+  width: 100%;
+  height: 980px;
+  background: linear-gradient(to bottom, #7900FF 0%,#7900FF 880px,#cbcbcb 880px,#cbcbcb 980px);
+  background-size: cover;
+  padding: 160px 160px;
+  box-sizing: border-box;
+  position: relative;
+  left:0px;
+  top:0px;
+}
+p#mockup4_wrap{
+  width: 950px;
+  height: 550px;
+  position: absolute;
+  right: 160px;
+  top:350px;/*250 원래위치*/
+  opacity: 0;
+}
+p#mockup4_wrap>img{
+  width: 100%;
+}
+span#project_logo4{
+  width: 86px;
+  height: 31px;
+  background: url('/kimsatbyeol_profile/images/project_logo4.png') no-repeat;
+  display: inline-block;
+  margin-right: 20px;
+  
+}
+p.project_twinkle_text{
+  width: 411px;
+  height: 60px;
+  background: url('/kimsatbyeol_profile/images/twinkle_text.png');
+  margin-top: 30px;
+}
+p.project_name4{
+  font:normal 80px "Lato";
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+ul.project_function_list4{
+  width:auto;
+  height: auto;
+  margin-bottom: 80px;
+}
+ul.project_function_list4>li{
+  width:100%;
+  height: 30px;
+  font:normal 20px "Noto Sans KR";
+  color: #fff;
+}
+
+div#footer_wrap{
+  width: 100%;
+  height: auto;
+  background: #7900FF;
+}
+footer{
+  width:1000px;
+  height: 100%;
+  margin: 0px auto;
+  padding: 50px 0px;
+  box-sizing: border-box;
+}
+p#footer_text{
+  font:normal 60px "Lora";
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  left:0px;
+  top:0px;
+}
+p#footer_identity_icon{
+  width: 85px;
+  height: 30px;
+  margin: 10px auto;
+}
+p#footer_identity_icon img{
+  width: 100%;
+}
+p#footer_name{
+  font:normal 26px "Noto Sans KR";
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+ul#footer_list{
+  width:100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+
+p#footer_icon1{
+  width:50px;
+  height: 50px;
+  margin:0px auto;
+  margin-bottom: 15px;
+  background: url('/kimsatbyeol_profile/images/footerIcon1.png') no-repeat;
+}
+p#footer_icon2{
+  width:50px;
+  height: 50px;
+  margin:0px auto;
+  margin-bottom: 15px;
+  background: url('/kimsatbyeol_profile/images/footerIcon2.png') no-repeat;
+}
+p#footer_icon3{
+  width:50px;
+  height: 50px;
+  margin:0px auto;
+  margin-bottom: 15px;
+  background: url('/kimsatbyeol_profile/images/footerIcon3.png') no-repeat;
+}
+p.footer_title{
+  font:normal 20px "Noto Sans KR";
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+p.footer_text{
+  font:normal 18px "Noto Sans KR";
+  color: #fff;
+  text-align: center;
+}

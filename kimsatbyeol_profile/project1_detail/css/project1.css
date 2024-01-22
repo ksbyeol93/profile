@@ -1,0 +1,175 @@
+div#header_wrap{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  left:0px;
+  top:0px;
+  z-index: 999;
+ }
+ div#mainmenu_bg{
+   width: 100%;
+   height: 80px;
+   background: rgba(0, 0, 0, 0.5);
+   opacity: 0;
+   position: absolute;
+   left:0px;
+   top:0px;
+ }
+ 
+ p#mainmenu{
+   width: 78px;
+   height: 36px;
+   background: url('/kimsatbyeol_profile/images/menu_icon.png') right center no-repeat;
+   cursor: pointer;
+   position: absolute;
+   right: 160px;
+   top:22px;
+   z-index: 9999;
+ }
+ p#mainmenu img{
+   width: 100%;
+ }
+ nav#mainmenu_wrap{
+   width:500px;
+   height: 100%;
+   position:absolute;
+   right:300px;
+   top:25px;
+   overflow: hidden;
+   z-index: 9990;
+ }
+ ul#mainmenu_list{
+   width:100%;
+   height: 100%;
+   position: absolute;
+   right:-500px;
+   top:0px;
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   justify-content: space-between;
+   opacity: 0;
+   
+ }
+ ul#mainmenu_list li a{
+  font: normal 20px "Lato";
+  color: white;
+  position: relative;
+  left:0px;
+  top:0px;
+ }
+ 
+ ul#mainmenu_list li a::after{
+   content: '';
+   width:100%;
+   height: 3px;
+   position: absolute;
+   background: white;
+   left:0px;
+   bottom: -10px;
+   transform: scale(0.0);
+   transition: 2s;
+ }
+ ul#mainmenu_list li.selected a::after{
+   transform: scale(1.1);
+ }
+div#project1_wrap{
+  width:100%;
+  height: 2200px;
+  background: url('/kimsatbyeol_profile/project1_detail/images/subpage_project1_bg.jpg') no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+section{
+  width:1600px;
+  height: auto;
+  margin: 0px auto;
+}
+div#sub_project1_visual_wrap{
+  width: 700px;
+  height: auto;
+}
+p#sub_project1_num{
+  font: normal 40px "Lora";
+  color: #fff;
+}
+span#sub_project_logo1{
+  width: 50px;
+  height: 50px;
+  background: url('/kimsatbyeol_profile/project1_detail/images/project_logo1.png') no-repeat;
+  display: inline-block;
+  margin-right: 20px;
+}
+p#sub_project1_name{
+  font: normal 100px "Noto Sans KR";
+  font-weight: 700;
+  color: #fff;
+}
+p#sub_project1_text{
+  font: normal 40px "Lora";
+  color: #fff;
+}
+ul#sub_project1_function_list{
+  width:100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+ul#sub_project1_function_list li{
+  font: normal 22px "Noto Sans KR";
+  font-weight: 400;
+  color: #00618F;
+}
+button#goSite{
+  width: 200px;
+  height: 60px;
+  background: #00618F;
+  border-radius: 5px;
+  border: none;
+  font:normal 26px "Noto Sans KR";
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+div#project1_infographic{
+  width:80%;
+  height: auto;
+  margin:0px auto;
+  position: relative;
+  left:0px;
+  top:0px;
+}
+p#project1_iso_img{
+  width: 70%;
+  position: absolute;
+  left:52%;
+  margin-left: -30%;
+  top:15%;
+  /*원래위치 10%*/
+  opacity: 0;
+  z-index: 10;
+}
+p#project1_iso_img img{
+  width: 100%;
+}
+div#project1_infographic img{
+  margin-bottom: 100px;
+  width: 100%;
+}
+div#project1_wireframe_wrap{
+  width:100%;
+  height: auto;
+  margin:0px auto;
+  padding: 0px 200px;
+  box-sizing: border-box;
+  background: #E3F0F5;
+}
+p#project1_wireframe_img{
+  width:70%;
+  height: auto;
+  margin:0px auto;
+}
+div#project1_wireframe_wrap img{
+  width: 100%;
+}
